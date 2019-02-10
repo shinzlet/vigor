@@ -2,6 +2,14 @@
   "dependencies": {
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
+    "express-handlebars": "^3.0.0",
     "morgan": "^1.9.1"
-  }
+  },
+  "name": "vigor",
+  "version": "1.0.0",
+  "description": "A good webmd",
+  "main": "app.js",
+  "repository": "https://github.com/shinzlet/vigor",
+  "author": "trmml <joshtrommel@gmail.com>",
+  "license": "MIT"
 }
