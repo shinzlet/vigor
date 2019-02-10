@@ -53,7 +53,9 @@
             "common cold": 0.8
         },
         "sniffles": {
-            "cancer": 10000
+            "common cold": 0.8,
+            "allergic reaction": 0.4,
+            "dust/pollution": 0.3
         }
     },
     "conditions": {
@@ -63,7 +65,7 @@
         },
         "pregnancy": {
             "title": "Pregnancy",
-            "info": "Yikes!"
+            "info": ""
         },
         "gallstones": {
             "title": "Choledocholithiasis",
@@ -75,27 +77,27 @@
         },
         "appendicitis": {
             "title": "Appendicitis",
-            "info": "appendix did a no no"
+            "info": ""
         },
         "pancreatitis": {
             "title": "Pancreatitis",
-            "info": "yank that pank outta there"
+            "info": ""
         },
         "common cold": {
             "title": "The Common Cold",
-            "info": "Try some <marquee>50 nic?</marquee>"
+            "info": ""
         },
         "hangover": {
             "title": "Veisalgia (Hangover)",
-            "info": "Oh dude that's wicked i love that congrats ha ha <img src=\"https://media1.tenor.com/images/8444e2053a9f86b1fcab5181809b0b55/tenor.gif?itemid=5150392\">"
+            "info": ""
         },
         "brain tumour": {
             "title": "Brain Tumor",
-            "info": ":*("
+            "info": ""
         },
         "blood clots": {
             "title": "Blood Clotting",
-            "info": "Get👏that👏blood👏outta👏there👏"
+            "info": ""
         },
         "carbon monoxide poisoning": {
             "title": "Carbon Monoxide Poisoning",
@@ -119,35 +121,35 @@
         },
         "allergic reaction": {
             "title": "Allergic Reaction",
-            "info": "Allergy? more like aller-wheeee!"
+            "info": ""
         },
         "drug withdrawl": {
             "title": "Drug Withdrawal",
-            "info": "You hit that 50 nic too hard and now u finna dieeee"
+            "info": ""
         },
         "dust/pollution": {
             "title": "Air Pollution",
-            "info": "The air? it is poison. Go to space and breathe space."
+            "info": ""
         },
         "dry air": {
             "title": "Dry Air",
-            "info": "Yikes. spit into the air!"
+            "info": ""
         },
         "tumour": {
             "title": "Tumour",
-            "info": "Get a butterknife. You know what to do."
+            "info": ""
         },
         "chickenpox": {
             "title": "Chicken Pox",
-            "info": "It's like cool graphic design on your body"
+            "info": ""
         },
         "hypoglycemia": {
             "title": "Hypoglycemia",
-            "info": "Eat a sugar, sir/madamoiselle."
+            "info": ""
         },
         "anxiety disorder": {
             "title": "Anxiety Disorder",
-            "info": "Don't worry! I love you."
+            "info": ""
         },
         "chemotherapy": {
             "title": "Chemotherapy",
@@ -155,7 +157,7 @@
         },
         "mumps": {
             "title": "Mumps",
-            "info": "Mumps, right?"
+            "info": ""
         },
         "anemia": {
             "title": "Anemia",

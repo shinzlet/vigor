@@ -17,7 +17,6 @@ body {
     background: $background;
     font-family: "EB Garamond";
     margin-top: 0;
-    padding: 20px;
     overflow: none;
     box-sizing: border-box;
 }
@@ -25,9 +24,30 @@ body {
 #wrapper {
     width: 30%;
     margin: 0 auto;
-    margin-top: 100px;
+    // margin-top: 100px;
 
     min-width: 500px;
+}
+
+#notification {
+    background: $brand-gradient;
+    color: white;
+    font-family: 'Muli';
+    padding: 5px;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+    margin-top: 0;
+    border-radius: 0px 0px 15px 15px;
+
+    p#title {
+        margin: 0px;
+        margin-bottom: 5px;
+        font-size: $medium-font;
+    }
+
+    p#content {
+        margin: 0px;
+    }
 }
 
 #header {
