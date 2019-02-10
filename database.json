@@ -1,7 +1,56 @@
 {
-    "associations": ["cd1", "cd2"],
-    "symptom-map": {
-        "gs1": [1, 0.2],
-        "gs2": [1, 0.5]
+    "symptoms": {
+        "stomach ache": {
+            "cancer": 0.2,
+            "pregnancy": 0.3,
+            "gallstones": 0.2,
+            "bowel disease": 0.2,
+            "appendicitis": 0.1,
+            "pancreatitis": 0.1,
+            "common cold": 0.8
+        },
+        "headache": {
+            "cancer": 0.2,
+            "hangover": 0.4,
+            "brain tumour": 0.1,
+            "blood clots": 0.1,
+            "carbon monoxide poisoning": 0.2,
+            "dehydration": 0.8,
+            "glaucoma": 0.1,
+            "panic attack": 0.5,
+            "stroke": 0.1
+        },
+        "sneezing": {
+            "allergic reaction": 0.7,
+            "common cold": 0.8,
+            "drug withdrawl": 0.2,
+            "dust/pollution": 0.8
+        },
+        "throat sore": {
+            "allergic reaction": 0.6,
+            "dry air": 0.4,
+            "tumour": 0.2,
+            "common cold": 0.9,
+            "chickenpox": 0.3,
+            "mumps": 0.2
+        },
+        "dizzy": {
+            "hypoglycemia": 0.2,
+            "anxiety disorder": 0.3,
+            "anemia": 0.1
+        },
+        "nauseous": {
+            "chemotherapy": 0.1,
+            "common cold": 0.8
+        },
+        "vomiting": {
+            "common cold": 0.8
+        },
+        "fatigued": {
+            "common cold": 0.8
+        },
+        "cough": {
+            "common cold": 0.8
+        }
     }
 }
