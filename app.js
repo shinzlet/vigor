@@ -20,6 +20,7 @@ app.get('/', (req, res) => {
     res.render('home');
 });
 
+//TODO: tokenize the user input so they can enter multiple symptoms
 app.get('/search', (req, res, next) => {
     if (Object.keys(req.query).length === 0) {
         // bitch you aint got queries
@@ -40,16 +41,32 @@ app.get('/search', (req, res, next) => {
             results: []
         }
 
-        if (Object.keys(mainResult).length > 1) {
-            console.log('multiple repsonses');
-            mainResult.forEach((condition) => {
-                render.results.push({title: condition, info: 'test'});
-            });
-            render['multipleSymptoms'] = true;
-        } else {
-            console.log('nope');
-            render['multipleSymptoms'] = false;
+        var scoring = {} // This will store conditon names as well as their sum weights and total occurences, like: {"common cold": {weight: 0.5, count: 2}}
+
+        mainResult.forEach(key => { // For every symptom name matched by the fuzzy finder,
+            conditions = db.symptoms[key] // We get the the possible conditions underneath it in the database
+
+            for(var key in conditions) { // Then, we iterate over each condition in the list.
+                if(key in scoring) { // If our scoring object has already come across this condition, we add the weight and increment the occurence counter.
+                    // add weight, counter
+                    scoring[key].weight += conditions[key]
+                    scoring[key].count++
+                } else { // If this is the first time we've come across this condition, we must intialize the object in the score counter.
+                    scoring[key] = {weight: conditions[key], count: 1}
+                }
+            }
+        })
+
+        // At this point in the code, scoring contains a dictionary with possible condition names, the weights attributed to them, and how many
+        // times they showed up in the search (a measure of how likely the particular condition is)
+
+        // So, we need to calculate the transformed score (which accounts for the number of occurences), and then sort them from most to least likely.
+
+        for(var condition in scoring) {
+            scoring[condition].finalScore = scoring[condition].weight * Math.pow(scoring[condition].count, 2)
         }
+
+        console.log(scoring)
 
         console.log(render);
 
