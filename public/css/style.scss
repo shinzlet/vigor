@@ -5,7 +5,7 @@ $brand-gradient: linear-gradient($brand-angle, $brand, $brand-light);
 $background: #FFFBF9;
 $font-color: #032d3c;
 $big-font: 48px;
-$medium-font: 40px;
+$medium-font: 30px;
 $small-font: 24px;
 
 body, html {
@@ -130,4 +130,5 @@ section#about {
 
 p#search-header {
     font-size: $medium-font;
+    font-family: 'Muli';
 }
