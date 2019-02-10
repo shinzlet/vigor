@@ -1,3 +1,13 @@
 body {
-    background: lightgrey;
+    background: #f3fdff;
+    font-family: "EB Garamond";
+}
+
+.logo::before {
+    content: '';
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #fcd7cc;
 }
