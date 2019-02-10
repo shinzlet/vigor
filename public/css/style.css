@@ -36,7 +36,9 @@ body {
       width: 1em;
       height: 1em;
       border-radius: 50%;
-      background: linear-gradient(22.3175deg, #F62459, #fa86a3);
+      background-image: linear-gradient(22.3175deg, #cf1332, #ff4136);
+      -webkit-mask-image: url("../assets/logo.svg");
+      mask-image: url("../assets/logo.svg");
       margin-right: 0.25em; }
   #header section#navbar a {
     float: right;
@@ -72,7 +74,7 @@ div#query-block {
     width: 2em;
     height: 2em;
     border-radius: 50%;
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/6/67/Antu_edit-find-mail.svg"), linear-gradient(22.3175deg, #F62459, #fa86a3);
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/6/67/Antu_edit-find-mail.svg"), linear-gradient(22.3175deg, #cf1332, #ff4136);
     background-size: 5em;
     background-repeat: repeat-x;
     background-position: 50%;
@@ -86,3 +88,6 @@ section#about {
   font-family: 'Muli';
   text-align: justify;
   margin-top: 30px; }
+
+p#search-header {
+  font-size: 40px; }

@@ -1,9 +1,12 @@
-$brand: #F62459;
-$brand-light: lighten($brand, 20%);
+$brand: #cf1332;
+$brand-light: #ff4136;
 $brand-angle: 22.3175deg;
 $brand-gradient: linear-gradient($brand-angle, $brand, $brand-light);
 $background: #FFFBF9;
 $font-color: #032d3c;
+$big-font: 48px;
+$medium-font: 40px;
+$small-font: 24px;
 
 body, html {
     width: 100%;
@@ -43,7 +46,7 @@ body {
         color: $font-color !important; // good css
     }
 
-    font-size: 48px;
+    font-size: $big-font;
 
     div.logo {
         float:left;
@@ -53,7 +56,9 @@ body {
             width: 1em;
             height: 1em;
             border-radius: 50%;
-            background: $brand-gradient;
+            background-image: $brand-gradient;
+            -webkit-mask-image: url("../assets/logo.svg");
+            mask-image: url("../assets/logo.svg");
             margin-right: 0.25em;
         }
     }
@@ -61,7 +66,7 @@ body {
     section#navbar {
         a {
             float: right;
-            font-size: 24px;
+            font-size: $small-font;
             margin-top: 9px;
             margin-left: 15px;
 
@@ -121,4 +126,8 @@ section#about {
     font-family: 'Muli';
     text-align: justify;
     margin-top: 30px;
+}
+
+p#search-header {
+    font-size: $medium-font;
 }
