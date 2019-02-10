@@ -115,10 +115,7 @@ div#query-block {
     button[type=submit] {
         height: 2em;
         border-radius: 0.8em;
-        background-image: url('https://upload.wikimedia.org/wikipedia/commons/6/67/Antu_edit-find-mail.svg'), $brand-gradient; // TODO
-        background-size: 5em;
-        background-repeat: repeat-x;
-        background-position: 50%;
+        background: $brand-gradient;
         border: none;
         color: white;
         float: right;
@@ -165,4 +162,34 @@ footer {
     color: $font-color;
     opacity: 0.5;
     text-align: center;
+}
+
+@media only screen and (orientation: portrait) {
+    #wrapper {
+        width: 90%;
+    }
+
+    footer {
+        font-size: $medium-font;
+        margin-bottom: 1000px;
+    }
+
+    section#about {
+        font-size: $medium-font;
+    }
+
+    div#query-block {
+        padding: none;
+
+        input#textbox {
+            font-size: $big-font;
+        }
+    
+        button[type=submit] {
+            height: auto;
+            width: 100%;
+            font-size: $medium-font;
+            border-radius: .5em;
+        }
+    }
 }

@@ -96,7 +96,7 @@ app.get('/search', (req, res, next) => {
             })
 
             if(render.results.length == 0) {
-                render.results.push({title: "No results found", info: "Sorry, we couldn't understand your query. Try again, and use conside descriptions. For example, nstead of saying \"My stomach aches,\" try searching \"stomach ache.\""})
+                render.results.push({title: "No results found", info: "Sorry, we couldn't understand your query. Try again, and use consise descriptions. For example, instead of saying \"My stomach aches,\" try searching \"stomach ache.\""})
             }
 
             // sum weight x number of occuruances squared 
