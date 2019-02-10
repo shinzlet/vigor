@@ -64,22 +64,25 @@ div#query-block {
     border: none;
     color: #032d3c;
     font-family: 'Muli';
-    font-size: 20px; }
+    font-size: 20px;
+    padding: 0 4px; }
     div#query-block input#textbox:required {
       box-shadow: none; }
     div#query-block input#textbox::before {
       content: 'Enter symptoms';
       display: block; }
+    div#query-block input#textbox::placeholder {
+      color: #032d3c;
+      opacity: 0.5; }
   div#query-block button[type=submit] {
-    width: 2em;
     height: 2em;
-    border-radius: 50%;
+    border-radius: 0.8em;
     background-image: url("https://upload.wikimedia.org/wikipedia/commons/6/67/Antu_edit-find-mail.svg"), linear-gradient(22.3175deg, #cf1332, #ff4136);
     background-size: 5em;
     background-repeat: repeat-x;
     background-position: 50%;
     border: none;
-    margin: 5px;
+    color: white;
     float: right; }
 
 section#about {
@@ -92,3 +95,17 @@ section#about {
 p#search-header {
   font-size: 30px;
   font-family: 'Muli'; }
+
+section#results div.result {
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+  padding: 10px 0px;
+  border-bottom: 1px rgba(0, 0, 0, 0.2) dashed; }
+  section#results div.result p.title {
+    font-size: 24px;
+    font-family: 'Muli'; }
+  section#results div.result p.info {
+    font-size: 24px;
+    font-family: 'Muli';
+    text-indent: 1em; }

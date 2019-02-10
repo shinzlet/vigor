@@ -97,6 +97,11 @@ div#query-block {
             display: block;
         }
 
+        &::placeholder {
+            color: $font-color;
+            opacity: 0.5;
+        }
+
         width: 100%;
         background: none;
         outline: none;
@@ -104,18 +109,18 @@ div#query-block {
         color: $font-color;
         font-family: 'Muli';
         font-size: 20px;
+        padding: 0 4px;
     }
 
     button[type=submit] {
-        width: 2em;
         height: 2em;
-        border-radius: 50%;
+        border-radius: 0.8em;
         background-image: url('https://upload.wikimedia.org/wikipedia/commons/6/67/Antu_edit-find-mail.svg'), $brand-gradient; // TODO
         background-size: 5em;
         background-repeat: repeat-x;
         background-position: 50%;
         border: none;
-        margin: 5px;
+        color: white;
         float: right;
     }
 }
@@ -131,4 +136,25 @@ section#about {
 p#search-header {
     font-size: $medium-font;
     font-family: 'Muli';
+}
+
+section#results {
+    div.result {
+        width: 100%;
+        padding: 5px;
+        box-sizing: border-box;
+        padding: 10px 0px;
+        border-bottom: 1px rgba(0, 0, 0, 0.2) dashed;
+
+        p.title {
+            font-size: $small-font;
+            font-family: 'Muli';
+        }
+
+        p.info {
+            font-size: $small-font;
+            font-family: 'Muli';
+            text-indent: 1em;
+        }
+    }
 }
