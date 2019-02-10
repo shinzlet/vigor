@@ -1,7 +1,8 @@
 $brand: #fcd7cc;
+$background: #f3fdff;
 
 body {
-    background: #f3fdff;
+    background: $background;
     font-family: "EB Garamond";
     margin: 20%;
     margin-top: 0;
@@ -23,3 +24,15 @@ body {
     }
 }
 
+form#query-area {
+    input#textbox {
+        background-color: $background;
+        border-radius: 10px;
+        outline: none;
+        border: 2px rgba(0, 0, 0, 0.5) solid;
+
+        &:focus {
+            outline: none;
+        }
+    }
+}

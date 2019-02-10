@@ -17,3 +17,11 @@ body {
     border-radius: 50%;
     background-color: #fcd7cc;
     margin-right: 1em; }
+
+form#query-area input#textbox {
+  background-color: #f3fdff;
+  border-radius: 10px;
+  outline: none;
+  border: 2px rgba(0, 0, 0, 0.5) solid; }
+  form#query-area input#textbox:focus {
+    outline: none; }
