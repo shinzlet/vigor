@@ -29,7 +29,7 @@ body {
 
 #header {
     width: 100%;
-    margin-bottom: 1em;
+    margin-bottom: 30px;
 
     &::after { // Garish clearfix
         content: " ";
@@ -76,6 +76,7 @@ div#query-block {
     border: 1px solid rgba(0, 0, 0, 0.2);
     padding: 10px;
     margin: 0 auto;
+    box-sizing: border-box;
 
     input#textbox {
         &:required {
@@ -83,7 +84,8 @@ div#query-block {
         }
 
         &::before {
-            content: '';
+            content: 'Enter symptoms';
+            display: block;
         }
 
         width: 100%;
@@ -107,4 +109,12 @@ div#query-block {
         margin: 5px;
         float: right;
     }
+}
+
+section#about {
+    font-size: 20px;
+    color: $font-color;
+    font-family: 'Muli';
+    text-align: justify;
+    margin-top: 30px;
 }

@@ -18,7 +18,7 @@ body {
 
 #header {
   width: 100%;
-  margin-bottom: 1em;
+  margin-bottom: 30px;
   font-size: 48px; }
   #header::after {
     content: " ";
@@ -51,7 +51,8 @@ div#query-block {
   overflow: hidden;
   border: 1px solid rgba(0, 0, 0, 0.2);
   padding: 10px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  box-sizing: border-box; }
   div#query-block input#textbox {
     width: 100%;
     background: none;
@@ -63,7 +64,8 @@ div#query-block {
     div#query-block input#textbox:required {
       box-shadow: none; }
     div#query-block input#textbox::before {
-      content: ''; }
+      content: 'Enter symptoms';
+      display: block; }
   div#query-block button[type=submit] {
     width: 2em;
     height: 2em;
@@ -75,3 +77,10 @@ div#query-block {
     border: none;
     margin: 5px;
     float: right; }
+
+section#about {
+  font-size: 20px;
+  color: #032d3c;
+  font-family: 'Muli';
+  text-align: justify;
+  margin-top: 30px; }
