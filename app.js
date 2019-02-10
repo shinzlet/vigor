@@ -25,7 +25,7 @@ app.get('/search', (req, res, next) => {
         // bitch you aint got queries
         next();
     } else {
-        res.send(req.query);
+        res.render('search', {query: req.query.query});
     }
 });
 
