@@ -13,3 +13,5 @@ credits
 -------
 
 I'd like to thank God, my teachers, and Seth hinz for the incredible css
+
+###seeking a mentor to help me handle that 50 nic
