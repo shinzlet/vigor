@@ -33,12 +33,29 @@ app.get('/search', (req, res, next) => {
         const mainResult = search.search(query);
 
         // sum weight x number of occuruances squared 
-        
-        res.render('search', {
+
+        var render = {
             query: query,
             mainResult: mainResult,
-            results: db.symptoms[mainResult]
-        });
+            results: []
+        }
+
+        if (Object.keys(mainResult).length > 1) {
+            console.log('multiple repsonses');
+            mainResult.forEach((condition) => {
+                render.results.push({title: condition, info: 'test'});
+            });
+            render['multipleSymptoms'] = true;
+        } else {
+            console.log('nope');
+            render['multipleSymptoms'] = false;
+        }
+
+        console.log(render);
+
+        // sum weight x number of occuruances squared 
+
+        res.render('search', render);
     }
 });
 
