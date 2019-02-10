@@ -16,11 +16,13 @@ body {
     margin-top: 0;
     padding: 20px;
     overflow: none;
+    box-sizing: border-box;
 }
 
 #wrapper {
     width: 30%;
     margin: 0 auto;
+    margin-top: 100px;
 
     min-width: 500px;
 }
@@ -62,18 +64,24 @@ div#query-block {
             box-shadow: none;
         }
 
+        &::before {
+            content: '';
+        }
+
         width: 100%;
         background: none;
         outline: none;
         border: none;
         color: $font-color;
+        font-family: 'Muli';
+        font-size: 20px;
     }
 
     button[type=submit] {
         width: 2em;
         height: 2em;
         border-radius: 50%;
-        background-image: url("https://upload.wikimedia.org/wikipedia/commons/6/67/Antu_edit-find-mail.svg"), $brand-gradient; // TODO
+        background-image: url('https://upload.wikimedia.org/wikipedia/commons/6/67/Antu_edit-find-mail.svg'), $brand-gradient; // TODO
         background-size: 5em;
         background-repeat: repeat-x;
         background-position: 50%;

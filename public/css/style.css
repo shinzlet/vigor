@@ -7,11 +7,13 @@ body {
   font-family: "EB Garamond";
   margin-top: 0;
   padding: 20px;
-  overflow: none; }
+  overflow: none;
+  box-sizing: border-box; }
 
 #wrapper {
   width: 30%;
   margin: 0 auto;
+  margin-top: 100px;
   min-width: 500px; }
 
 #header {
@@ -43,9 +45,13 @@ div#query-block {
     background: none;
     outline: none;
     border: none;
-    color: #032d3c; }
+    color: #032d3c;
+    font-family: 'Muli';
+    font-size: 20px; }
     div#query-block input#textbox:required {
       box-shadow: none; }
+    div#query-block input#textbox::before {
+      content: ''; }
   div#query-block button[type=submit] {
     width: 2em;
     height: 2em;
