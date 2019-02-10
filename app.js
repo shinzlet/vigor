@@ -2,7 +2,8 @@ const express = require('express')
     , app = express()
     , morgan = require('morgan')
     , exphbs = require('express-handlebars')
-    , bodyParser = require('body-parser');
+    , bodyParser = require('body-parser')
+    , fuzzy = require('fuzzy-search');
 
 // my  all time fav port 
 const PORT = process.env.PORT || 8080;
