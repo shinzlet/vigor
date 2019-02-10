@@ -167,11 +167,19 @@ footer {
 @media only screen and (orientation: portrait) {
     #wrapper {
         width: 90%;
+        padding-bottom: 20px;
+    }
+
+    #header {
+        font-size: $big-font * 2;
+
+        #navbar a img {
+            font-size: $big-font;
+        }
     }
 
     footer {
         font-size: $medium-font;
-        margin-bottom: 1000px;
     }
 
     section#about {
@@ -179,17 +187,20 @@ footer {
     }
 
     div#query-block {
-        padding: none;
+        padding: 0;
 
         input#textbox {
             font-size: $big-font;
+            height: 3em;
+            margin: 0 10px;
         }
     
         button[type=submit] {
-            height: auto;
+            height: 2em;
             width: 100%;
-            font-size: $medium-font;
-            border-radius: .5em;
+            font-size: $big-font;
+            margin: 0;
+            border-radius: 0;
         }
     }
 }
