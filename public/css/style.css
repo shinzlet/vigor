@@ -1,11 +1,19 @@
 body {
   background: #f3fdff;
-  font-family: "EB Garamond"; }
+  font-family: "EB Garamond";
+  margin: 20%;
+  margin-top: 0;
+  padding: 20px;
+  overflow: none; }
 
-.logo::before {
-  content: '';
-  display: inline-block;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  background-color: #fcd7cc; }
+.logo {
+  font-size: 24px; }
+  .logo::before {
+    content: '';
+    display: inline-block;
+    float: left;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    background-color: #fcd7cc;
+    margin-right: 1em; }

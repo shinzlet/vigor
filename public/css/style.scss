@@ -3,13 +3,22 @@ $brand: #fcd7cc;
 body {
     background: #f3fdff;
     font-family: "EB Garamond";
+    margin: 20%;
+    margin-top: 0;
+    padding: 20px;
+    overflow: none;
 }
 
-.logo::before {
-    content: '';
-    display: inline-block;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    background-color: $brand;
+.logo {
+    font-size: 24px;
+    &::before {
+        content: '';
+        display: inline-block;
+        float: left;
+        width: 2em;
+        height: 2em;
+        border-radius: 50%;
+        background-color: $brand;
+        margin-right: 1em;
+    }
 }
