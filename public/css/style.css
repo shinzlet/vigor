@@ -18,12 +18,18 @@ body {
 
 #header {
   width: 100%;
-  margin-bottom: 1em; }
+  margin-bottom: 1em;
+  font-size: 48px; }
+  #header::after {
+    content: " ";
+    display: block;
+    height: 0;
+    clear: both; }
   #header a {
     text-decoration: none;
     color: #032d3c !important; }
   #header div.logo {
-    font-size: 48px; }
+    float: left; }
     #header div.logo::before {
       content: '';
       float: left;
@@ -32,9 +38,15 @@ body {
       border-radius: 50%;
       background: linear-gradient(22.3175deg, #F62459, #fa86a3);
       margin-right: 0.25em; }
+  #header section#navbar a {
+    float: right;
+    font-size: 24px;
+    margin-top: 18px;
+    margin-left: 15px; }
 
 div#query-block {
   background-color: #f3fdff;
+  width: 100%;
   border-radius: 1em;
   overflow: hidden;
   border: 1px solid rgba(0, 0, 0, 0.2);
