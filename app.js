@@ -26,10 +26,13 @@ app.get('/search', (req, res, next) => {
         next();
     } else {
         const query = req.query.query;
-
         const db = require('./database');
-        const search = new fuzzy(Object.keys(db.symptoms), { caseSensitive: false });
+        const symptoms = Object.keys(db.symptoms);
+
+        const search = new fuzzy(symptoms, { caseSensitive: false });
         const result = search.search(query);
+
+        // sum weight x number of occuruances squared 
 
         res.render('search', {query: query, result: result});
     }
