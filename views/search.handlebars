@@ -1,6 +1,8 @@
+<h2>{{mainResult}}</h2>
+
 <section id="results">
     {{#each results}}
-    <h1>{{name}}</h1>
-    <p>{{body}}</p>
+        <h1>{{@key}}</h1>
+        <p>{{this}}</p>
     {{/each}}
 </section>

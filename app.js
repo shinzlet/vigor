@@ -30,16 +30,16 @@ app.get('/search', (req, res, next) => {
         const symptoms = Object.keys(db.symptoms);
 
         const search = new fuzzy(symptoms, { caseSensitive: false });
-        const result = search.search(query);
+        const mainResult = search.search(query);
 
         // sum weight x number of occuruances squared 
-
-        res.render('search', {query: query, result: result});
+        
+        res.render('search', {
+            query: query,
+            mainResult: mainResult,
+            results: db.symptoms[mainResult]
+        });
     }
-});
-
-app.get('/about', (req, res) => {
-    res.render('about');
 });
 
 app.get('*', (req, res) => {
