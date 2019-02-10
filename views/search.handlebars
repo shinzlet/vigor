@@ -1,4 +1,11 @@
-<h2>{{mainResult}}</h2> 
+<form id="query-area" type="POST" action="/search">
+    <div id ="query-block">
+        <input type="text" id="textbox" name="query" required>
+        <button type="submit"></button>
+    </div>
+</form>
+
+<h1>search results</h1> 
 
 <section id="results">
     {{#each results}}
