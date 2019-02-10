@@ -51,6 +51,9 @@
         },
         "cough": {
             "common cold": 0.8
+        },
+        "sniffles": {
+            "cancer": 10000
         }
     },
     "conditions": {
@@ -153,6 +156,10 @@
         "mumps": {
             "title": "Mumps",
             "info": "Mumps, right?"
+        },
+        "anemia": {
+            "title": "Anemia",
+            "info": "Anemia is a lack of iron in the blood."
         }
     }
 }

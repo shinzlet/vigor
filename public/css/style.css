@@ -109,3 +109,10 @@ section#results div.result {
     font-size: 24px;
     font-family: 'Muli';
     text-indent: 1em; }
+
+footer {
+  margin-top: 20px;
+  font-family: 'Muli';
+  color: #032d3c;
+  opacity: 0.5;
+  text-align: center; }

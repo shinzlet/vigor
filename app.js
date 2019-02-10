@@ -19,6 +19,9 @@ app.use(morgan('dev'));
 function loveMachine(query, req, cb) {
     const db = require('./database');
     const symptoms = Object.keys(db.symptoms);
+
+    // lol time to sanitize the input a bit
+    query = query.trim();
     
     const search = new fuzzy(symptoms, { caseSensitive: false });
     const tokens = query.split(' ');
@@ -91,6 +94,10 @@ app.get('/search', (req, res, next) => {
                 console.log(cond)
                 render.results.push({title: cond.title, info: cond.info})
             })
+
+            if(render.results.length == 0) {
+                render.results.push({title: "No results found", info: "Sorry, we couldn't understand your query. Try again, and use conside descriptions. For example, nstead of saying \"My stomach aches,\" try searching \"stomach ache.\""})
+            }
 
             // sum weight x number of occuruances squared 
 
