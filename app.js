@@ -25,7 +25,13 @@ app.get('/search', (req, res, next) => {
         // bitch you aint got queries
         next();
     } else {
-        res.render('search', {query: req.query.query});
+        const query = req.query.query;
+
+        const db = require('./database');
+        const search = new fuzzy(Object.keys(db.symptoms), { caseSensitive: false });
+        const result = search.search(query);
+
+        res.render('search', {query: query, result: result});
     }
 });
 
