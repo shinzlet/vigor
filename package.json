@@ -14,5 +14,8 @@
   "main": "app.js",
   "repository": "https://github.com/shinzlet/vigor",
   "author": "trmml <joshtrommel@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "start": "node app.js"
+  }
 }
