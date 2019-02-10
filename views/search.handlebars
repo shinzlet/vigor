@@ -1,3 +1,6 @@
-<h1>q: {{query}}</h1>
-
-<p>a: {{result}}</p>
+<section id="results">
+    {{#each results}}
+    <h1>{{name}}</h1>
+    <p>{{body}}</p>
+    {{/each}}
+</section>
