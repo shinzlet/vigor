@@ -52,5 +52,107 @@
         "cough": {
             "common cold": 0.8
         }
+    },
+    "conditions": {
+        "cancer": {
+            "title": "Cancer",
+            "info": "Cancer is the general term for a group of several diseases. All of them root from uncontrolled cell replication, and many present with the formation of uncontrolled tissue masses known as tumors."
+        },
+        "pregnancy": {
+            "title": "Pregnancy",
+            "info": "Yikes!"
+        },
+        "gallstones": {
+            "title": "Choledocholithiasis",
+            "info": "Choledocholithiasis is a term used to indicate the presence of gallstones, which are small lumps formed from bile inside the gallbladder."
+        },
+        "bowel disease": {
+            "title": "Inflammatory Bowel Disease",
+            "info": ""
+        },
+        "appendicitis": {
+            "title": "Appendicitis",
+            "info": "appendix did a no no"
+        },
+        "pancreatitis": {
+            "title": "Pancreatitis",
+            "info": "yank that pank outta there"
+        },
+        "common cold": {
+            "title": "The Common Cold",
+            "info": "hi this is seth - take 40mg diphenhydramine hydrochloride, then throw back 6000IU vitamin D and 4000mg vitamin C before hitting the hay with a hot water bottle. Do that for three days, bam, you're fixed."
+        },
+        "hangover": {
+            "title": "Veisalgia (Hangover)",
+            "info": "Oh dude that's wicked i love that congrats ha ha <img src=\"https://media1.tenor.com/images/8444e2053a9f86b1fcab5181809b0b55/tenor.gif?itemid=5150392\">"
+        },
+        "brain tumour": {
+            "title": "Brain Tumor",
+            "info": ":*("
+        },
+        "blood clots": {
+            "title": "Blood Clotting",
+            "info": "Get👏that👏blood👏outta👏there👏"
+        },
+        "carbon monoxide poisoning": {
+            "title": "Carbon Monoxide Poisoning",
+            "info": "Carbon monoxide poisoning affects judgement very quickly - get outside now and continue research."
+        },
+        "dehydration": {
+            "title": "Dehydration",
+            "info": "Dehydration is a common cause of several minor medical affectations, such as headache, confusion, and tiredness. Drinking water should rectify this temporarily, but it is possible there is an underlying cause."
+        },
+        "glaucoma": {
+            "title": "Glaucoma",
+            "info": "Glaucoma is a disease of the eye that stems from increased pressure in the fluid within the eye. This causes damage to the retina, and causes permanent vision loss."
+        },
+        "panic attack": {
+            "title": "Panic Attack",
+            "info": "Panic attacks are sudden-onset, brief outbursts of stress, panic, and other negative emotions."
+        },
+        "stroke": {
+            "title": "Stroke",
+            "info": "A stroke is a medical condition that causes brain cell death due to blood flow issues. This can be due to hemmoraghic bleeding, or lack of blood flow."
+        },
+        "allergic reaction": {
+            "title": "Allergic Reaction",
+            "info": "Allergy? more like aller-wheeee!"
+        },
+        "drug withdrawl": {
+            "title": "Drug Withdrawal",
+            "info": "You hit that 50 nic too hard and now u finna dieeee"
+        },
+        "dust/pollution": {
+            "title": "Air Pollution",
+            "info": "The air? it is poison. Go to space and breathe space."
+        },
+        "dry air": {
+            "title": "Dry Air",
+            "info": "Yikes. spit into the air!"
+        },
+        "tumour": {
+            "title": "Tumour",
+            "info": "Get a butterknife. You know what to do."
+        },
+        "chickenpox": {
+            "title": "Chicken Pox",
+            "info": "It's like cool graphic design on your body"
+        },
+        "hypoglycemia": {
+            "title": "Hypoglycemia",
+            "info": "Eat a sugar, sir/madamoiselle."
+        },
+        "anxiety disorder": {
+            "title": "Anxiety Disorder",
+            "info": "Don't worry! I love you."
+        },
+        "chemotherapy": {
+            "title": "Chemotherapy",
+            "info": "If you are taking chemotherapy drugs, it is possible they are causing your symptoms. Consult your doctor."
+        },
+        "mumps": {
+            "title": "Mumps",
+            "info": "Mumps, right?"
+        }
     }
 }

@@ -21,7 +21,12 @@ function loveMachine(query, req, cb) {
     const symptoms = Object.keys(db.symptoms);
     
     const search = new fuzzy(symptoms, { caseSensitive: false });
-    const mainResult = search.search(query);
+    const tokens = query.split(' ');
+    let mainResult = []
+
+    tokens.forEach(token => {
+        mainResult.push(...search.search(token))
+    })
 
     cb(mainResult);
 }
@@ -38,9 +43,7 @@ app.get('/search', (req, res, next) => {
     } else {
         loveMachine(req.query.query, req, (mainResult) => {
             const db = require('./database');
-            const symptoms = Object.keys(db.symptoms);
-
-            const search = new fuzzy(symptoms, { caseSensitive: false });                                                                                    
+            const symptoms = Object.keys(db.symptoms);                                                                             
 
             // sum weight x number of occuruances squared 
 
@@ -81,12 +84,13 @@ app.get('/search', (req, res, next) => {
             sortable.sort((first, second) => {
                 return second[1] - first[1]
             })
-
+            console.log(sortable)
             sortable.forEach(diagnosis => {
-                render.results.push({title: diagnosis[0], info: 'wow you\'re sick'})
+                console.log(diagnosis)
+                let cond = db.conditions[diagnosis[0]];
+                console.log(cond)
+                render.results.push({title: cond.title, info: cond.info})
             })
-
-            console.log(render);
 
             // sum weight x number of occuruances squared 
 
