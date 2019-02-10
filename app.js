@@ -38,6 +38,10 @@ app.get('/search', (req, res, next) => {
     }
 });
 
+app.get('/about', (req, res) => {
+    res.render('about');
+});
+
 app.get('*', (req, res) => {
     res.send('404 bröthër');
 });
