@@ -7,4 +7,4 @@ of the common cold is far more common than one for cancer.
 Credits
 -------
 
-Created by [https://github.com/trmml](Josh Trommel) and [https://github.com/shinzlet](Seth Hinz) as a part of XdHacks 2019.
+Created by [Josh Trommel](https://github.com/trmml) and [Seth Hinz](https://github.com/shinzlet) as a part of XdHacks 2019.
