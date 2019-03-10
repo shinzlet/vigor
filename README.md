@@ -1,17 +1,10 @@
-vigor
+Vigor
 =====
 
-a good webmd that will probably never be finished lol xd
+Vigor is a WebMD-like service that is designed to provide reasonable diagnoses. It ranks suggestions by their relative likeliness, meaning a diagnosis
+of the common cold is far more common than one for cancer.
 
-usage
------
-clone, `npm install`, `node app.js`
-
-that's literally it br0
-
-credits
+Credits
 -------
 
-I'd like to thank God, my teachers, and Seth hinz for the incredible css
-
-###seeking a mentor to help me handle that 50 nic
+Created by [https://github.com/trmml](Josh Trommel) and [https://github.com/shinzlet](Seth Hinz) as a part of XdHacks 2019.
